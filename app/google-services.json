@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20111071594",
+    "firebase_url": "https://cvupdate-9857d.firebaseio.com",
+    "project_id": "cvupdate-9857d",
+    "storage_bucket": "cvupdate-9857d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20111071594:android:b3a4dc198345cf5591ad13",
+        "android_client_info": {
+          "package_name": "com.example.cv_update"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20111071594-pr404jn6j067o2bu858851i9lrettiph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cv_update",
+            "certificate_hash": "afa8a432d4ba2a18e9e734882fe07bbac566dbc1"
+          }
+        },
+        {
+          "client_id": "20111071594-v0i1cgabeifd7rikrru2b9lvv90seumd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVxEYUvGTBUelgHCsjk1VNxb2C8k5Cd4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20111071594-v0i1cgabeifd7rikrru2b9lvv90seumd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

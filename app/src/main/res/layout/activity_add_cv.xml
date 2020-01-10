@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddCv">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Add CV"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+<TextView
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:textSize="15sp"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/colorblack"
+    android:layout_width="match_parent"
+    android:text="Create your own CV"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="HEADING"
+        android:textColor="@color/colorblack"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="Fullname"
+        android:id="@+id/fullnamecv"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="Address"
+        android:padding="10dp"
+        android:id="@+id/addresscv"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="50"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:hint="Phone Number One"
+            android:padding="10dp"
+            android:id="@+id/phone1cv"
+            android:background="@drawable/button"
+            android:layout_height="50dp"/>
+        <EditText
+            android:layout_weight="50"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:hint="Phone Number Two"
+            android:padding="10dp"
+            android:id="@+id/phone2cv"
+            android:background="@drawable/button"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:padding="10dp"
+        android:id="@+id/emailcv"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="PERSONAL DATA"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="Nationality"
+        android:padding="10dp"
+        android:id="@+id/nationaltycv"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="State of origin"
+        android:id="@+id/stateoforigincv"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:hint="10th/Oct/1995"
+        android:padding="10dp"
+        android:id="@+id/dateofbirthcv"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/gendercv"
+        android:entries="@array/gender"
+        android:background="@drawable/button"
+        android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:hint="Discipline"
+            android:id="@+id/disciplinecv"
+            android:padding="10dp"
+            android:background="@drawable/button"
+            android:layout_height="50dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="EDUCATION"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:hint="Schools attended and duration"
+            android:padding="10dp"
+            android:id="@+id/educationcv"
+            android:gravity="top"
+            android:background="@drawable/button"
+            android:layout_height="190dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="OTHER QUALIFICATION"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/otherqualificationcv"
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:gravity="top"
+            android:hint="Other qualifications"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="130dp"/>
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="WORKING EXPERIENCE"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/workingexperiencecv"
+            android:layout_width="match_parent"
+            android:hint="Working experience"
+            android:textStyle="normal"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="PERSONAL QUALITIES"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:gravity="top"
+            android:layout_marginTop="20dp"
+            android:id="@+id/personalqualitiescv"
+            android:layout_width="match_parent"
+            android:hint="Personal Qualities"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="LANGUAGE SPOKEN"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/languagespokencv"
+            android:layout_width="match_parent"
+            android:hint="language Spoken"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="INTEREST"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/interestfieldcv"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:hint="Interest"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:padding="9dp"
+            android:inputType="textMultiLine"
+            android:layout_height="90dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="REFEREES"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/refereescv"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:hint="Refrees"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:padding="9dp"
+            android:inputType="textMultiLine"
+            android:layout_height="90dp"/>
+
+
+
+
+
+
+
+<Button
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/buttonlogin"
+    android:text="Submit"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

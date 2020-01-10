@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="9dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/babaCard"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+<LinearLayout
+    android:padding="7dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:src="@drawable/user"
+        android:id="@+id/imagecard"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:id="@+id/fullnamecard"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:text="Adefuwa Oluwaponmile Hussein"
+            android:layout_height="wrap_content"/>
+        <TextView
+          android:id="@+id/disciplinecard"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/colorblack"
+            android:text="Computer Science"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Few Details"
+        android:textStyle="bold"
+        android:soundEffectsEnabled="true"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorblack"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/languagecard"
+            android:layout_width="wrap_content"
+            android:text="English and Yoruba"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorblack"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="+2349091458969"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:id="@+id/phone1card"
+        android:textColor="@color/colorblack"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="supersondultimate@gmail.com"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:id="@+id/emailcard"
+        android:textColor="@color/colorblack"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="More"
+        android:id="@+id/viewmorecard"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonlogin"
+        android:layout_gravity="end"
+        android:layout_height="40dp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

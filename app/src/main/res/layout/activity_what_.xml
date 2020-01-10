@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@color/white"
+    tools:context=".What_Activity">
+
+    <TextView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:text="NEW STUDENT"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/button1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/fullnamePane"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/lock"
+                />
+            <EditText
+
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/button1"
+                android:hint="Fullname"
+                android:layout_width="match_parent"
+                android:id="@+id/fullname"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:background="@drawable/button1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/email"
+                />
+            <EditText
+
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/button1"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:layout_height="45dp"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:background="@drawable/button1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/lock"
+                />
+            <EditText
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/button1"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:layout_height="45dp"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/button1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/Pane"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="24dp"
+                android:src="@drawable/lock"
+                android:layout_height="24dp"
+
+                />
+            <EditText
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/button1"
+                android:hint="Phone Number (2349091458969)"
+                android:layout_width="match_parent"
+                android:id="@+id/phone"
+                android:layout_height="45dp"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+
+
+
+<ProgressBar
+    android:layout_marginTop="7dp"
+    android:layout_width="30dp"
+    android:id="@+id/loader"
+    android:visibility="gone"
+    android:indeterminateTint="@color/colorPrimary"
+    android:layout_height="20dp"/>
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/loginWhat"
+            android:clickable="false"
+            android:enabled="false"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:src="@drawable/lock"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
