@@ -33,11 +33,10 @@ import java.util.HashMap;
 
 public class What_Activity extends AppCompatActivity {
     private EditText fullname1, phone1;
-    private EditText address;
-    private EditText email1, password1, meterr;
+    private EditText email1, password1;
     private ImageButton submitt;
 
-    DatabaseReference reference, reference2;
+    DatabaseReference reference;
     FirebaseUser fuser;
     TextView back;
     FirebaseAuth auth;
@@ -49,17 +48,16 @@ public class What_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_what_);
+        reference = FirebaseDatabase.getInstance().getReference();
+        fullname1 = (EditText) (findViewById(R.id.fullname));
+        phone1 = (EditText) (findViewById(R.id.phone));
         submitt = (ImageButton) (findViewById(R.id.loginWhat));
         email1 = (EditText) findViewById(R.id.email);
         password1 = (EditText) findViewById(R.id.password);
+
         auth = FirebaseAuth.getInstance();
-        reference = FirebaseDatabase.getInstance().getReference();
-        reference2 = FirebaseDatabase.getInstance().getReference("Attempt");
-       // progressDialog = new ProgressDialog(this);
         progressBar = (ProgressBar)findViewById(R.id.loader);
 
-        fullname1 = (EditText) (findViewById(R.id.fullname));
-        phone1 = (EditText) (findViewById(R.id.phone));
 
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -110,15 +108,12 @@ public class What_Activity extends AppCompatActivity {
                                                 String userid = firebaseUser.getUid();
                                                 HashMap<String, Object> hashMap = new HashMap<>();
                                                 HashMap<String, Object> hashMap1 = new HashMap<>();
-                                                hashMap1.put("MatricNumber", meterr.getText().toString());
                                                 hashMap1.put("Status", "");
 
                                                 hashMap.put("fullname", txt_username);
                                                 hashMap.put("phone", txt_phone);
                                                 hashMap.put("email", email);
-                                                hashMap.put("MatricNumber", meterr.getText().toString());
                                                 hashMap.put("id", String.valueOf(maxid + 1));
-                                                reference2.child(meterr.getText().toString()).setValue(hashMap1);
 
                                                 reference.child(userid).setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
