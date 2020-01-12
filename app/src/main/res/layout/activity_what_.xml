@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-android:background="@color/white"
+    android:background="@color/white"
     tools:context=".What_Activity">
 
     <TextView
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:text="NEW STUDENT"
-        android:padding="10dp"
+        android:text="New User"
+        android:padding="20dp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="10sp"
+        android:textSize="14sp"
         android:layout_height="wrap_content"/>
-
-    <ScrollView
-
-        android:layout_width="match_parent"
-        android:scrollbars="none"
-        android:layout_height="match_parent">
-
-
 
 
     <LinearLayout
         android:layout_margin="5dp"
-
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="bottom"
         android:layout_height="match_parent">
 
 
@@ -40,7 +31,12 @@ android:background="@color/white"
 
 
 
-
+        <ImageView
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cvw" />
 
         <LinearLayout
             android:gravity="center"
@@ -142,7 +138,7 @@ android:background="@color/white"
 
                 />
             <EditText
-                android:imeOptions="actionNext"
+                android:imeOptions="actionGo"
                 android:padding="10dp"
                 android:background="@drawable/button1"
                 android:hint="Phone Number (2349091458969)"
@@ -160,14 +156,16 @@ android:background="@color/white"
     android:layout_width="30dp"
     android:id="@+id/loader"
     android:visibility="gone"
+    android:layout_gravity="center_horizontal"
     android:indeterminateTint="@color/colorPrimary"
-    android:layout_height="20dp"/>
-        <ImageButton
+    android:layout_height="50dp"/>
+        <Button
             android:layout_gravity="center"
             android:id="@+id/loginWhat"
-            android:clickable="false"
-            android:enabled="false"
-            android:background="@drawable/buttonlogin"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="50dp"
             android:layout_width="200dp"
@@ -178,5 +176,4 @@ android:background="@color/white"
 
     </LinearLayout>
 
-</ScrollView>
-</LinearLayout>
+</RelativeLayout>

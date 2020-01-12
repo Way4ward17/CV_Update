@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -34,7 +35,7 @@ import java.util.HashMap;
 public class What_Activity extends AppCompatActivity {
     private EditText fullname1, phone1;
     private EditText email1, password1;
-    private ImageButton submitt;
+    private Button submitt;
 
     DatabaseReference reference;
     FirebaseUser fuser;
@@ -51,7 +52,7 @@ public class What_Activity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference();
         fullname1 = (EditText) (findViewById(R.id.fullname));
         phone1 = (EditText) (findViewById(R.id.phone));
-        submitt = (ImageButton) (findViewById(R.id.loginWhat));
+        submitt = (Button) (findViewById(R.id.loginWhat));
         email1 = (EditText) findViewById(R.id.email);
         password1 = (EditText) findViewById(R.id.password);
 
@@ -107,9 +108,6 @@ public class What_Activity extends AppCompatActivity {
                                                 assert firebaseUser != null;
                                                 String userid = firebaseUser.getUid();
                                                 HashMap<String, Object> hashMap = new HashMap<>();
-                                                HashMap<String, Object> hashMap1 = new HashMap<>();
-                                                hashMap1.put("Status", "");
-
                                                 hashMap.put("fullname", txt_username);
                                                 hashMap.put("phone", txt_phone);
                                                 hashMap.put("email", email);

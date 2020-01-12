@@ -8,6 +8,7 @@
     tools:context=".AddCv">
 
     <LinearLayout
+        android:background="@color/whiteBlack"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
@@ -17,22 +18,50 @@
     <RelativeLayout
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:text="Add CV"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/colorWhite"
             android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cv"/>
+
+
     </RelativeLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorblack"
+            android:layout_width="match_parent"
+            android:text="Profile Image"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileImage"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/addimage"/>
 
 <TextView
     android:gravity="center"
     android:layout_marginTop="10dp"
     android:textSize="15sp"
+    android:textStyle="bold"
     android:layout_marginBottom="10dp"
     android:textColor="@color/colorblack"
     android:layout_width="match_parent"
@@ -100,9 +129,11 @@
         android:background="@drawable/button"
         android:layout_height="50dp"/>
 
+
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="20dp"
         android:text="PERSONAL DATA"
         android:textStyle="bold"
         android:textColor="@color/colorblack"
@@ -189,7 +220,9 @@
             android:id="@+id/otherqualificationcv"
             android:layout_width="match_parent"
             android:textStyle="normal"
+            android:background="@drawable/button"
             android:gravity="top"
+            android:padding="10dp"
             android:hint="Other qualifications"
             android:textSize="15sp"
             android:textColor="@color/colorblack"
@@ -212,8 +245,10 @@
             android:id="@+id/workingexperiencecv"
             android:layout_width="match_parent"
             android:hint="Working experience"
+            android:padding="10dp"
             android:textStyle="normal"
             android:gravity="top"
+            android:background="@drawable/button"
             android:textSize="15sp"
             android:textColor="@color/colorblack"
             android:layout_height="120dp"/>
@@ -233,8 +268,10 @@
             android:id="@+id/personalqualitiescv"
             android:layout_width="match_parent"
             android:hint="Personal Qualities"
+            android:padding="10dp"
             android:textStyle="normal"
             android:textSize="15sp"
+            android:background="@drawable/button"
             android:textColor="@color/colorblack"
             android:layout_height="120dp"/>
 
@@ -252,6 +289,8 @@
             android:id="@+id/languagespokencv"
             android:layout_width="match_parent"
             android:hint="language Spoken"
+            android:padding="10dp"
+            android:background="@drawable/button"
             android:textStyle="normal"
             android:textSize="15sp"
             android:textColor="@color/colorblack"
@@ -310,12 +349,20 @@
 
 
 
-
+<ProgressBar
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/loader"
+    android:visibility="gone"
+    android:indeterminateTint="@color/colorPrimary"
+    android:layout_gravity="center_horizontal"
+    />
 <Button
     android:layout_marginTop="20dp"
     android:layout_marginBottom="20dp"
     android:layout_width="match_parent"
     android:layout_height="40dp"
+    android:id="@+id/buttonup"
     android:textColor="@color/colorWhite"
     android:background="@drawable/buttonlogin"
     android:text="Submit"/>

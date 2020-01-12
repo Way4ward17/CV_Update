@@ -72,7 +72,7 @@ private Button signupButton;
                 } else {
                     progressBar.setVisibility(View.VISIBLE);
                     if(emailLogin1.getText().toString().equals("admin") && emailPassword1.getText().toString().equals("admin")){
-                        Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+                        Intent intent = new Intent(ActivityLogin.this, AddCv.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
@@ -88,7 +88,7 @@ private Button signupButton;
 
 
                                             progressBar.setVisibility(View.INVISIBLE);
-                                            Intent intent = new Intent(ActivityLogin.this, MainActivity.class);
+                                            Intent intent = new Intent(ActivityLogin.this, AddCv.class);
                                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                             startActivity(intent);
                                             finish();

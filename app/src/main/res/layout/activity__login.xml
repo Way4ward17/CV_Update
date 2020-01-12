@@ -6,26 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".ActivityLogin"
     android:id="@+id/mainView"
-    android:gravity="bottom"
-    android:layout_gravity="bottom"
-    android:orientation="vertical">
+    android:background="@color/colorPrimary"
+>
 
     <TextView
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:text="LOGIN"
-        android:padding="10dp"
+        android:gravity="top"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="10sp"
+        android:textSize="15sp"
         android:layout_height="wrap_content"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+  android:orientation="vertical"
+    android:layout_height="wrap_content">
 
+    <ImageView
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cv" />
 
-<RelativeLayout
+    <RelativeLayout
    android:paddingStart="20dp"
     android:paddingEnd="20dp"
     android:padding="0dp"
@@ -34,7 +43,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="wrap_content">
-
 
 
 
@@ -181,7 +189,7 @@ android:backgroundTint="@color/colorPrimaryDark"
             android:layout_marginTop="20dp"
             android:id="@+id/signupButton"
             android:textAllCaps="false"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/white"
             android:background="@drawable/buttonlogin"
             android:layout_centerHorizontal="true"
@@ -189,5 +197,6 @@ android:backgroundTint="@color/colorPrimaryDark"
     </LinearLayout>
 </androidx.cardview.widget.CardView>
     </RelativeLayout>
-    </ScrollView>
+
+</LinearLayout>
 </RelativeLayout>
